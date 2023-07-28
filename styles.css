@@ -1,0 +1,371 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navigation-bar{
+    background-color: black;
+    border-bottom: solid 1px #eef0e0;
+    position: fixed;
+    width: 100vw;
+    height: 87px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    top:0;
+    z-index: 100;
+}
+
+#navbar-image-box{
+    position: relative;
+    height: 85%;
+    left: 0;
+    transition: left 1.5s;
+    z-index: 2;
+}
+
+#navbar-image-logo{
+    height: 100%;
+}
+
+#nav-back-button{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    margin-left: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 2s, opacity 2s ease;
+}
+
+#canvas{
+    display: flex;
+    top: 87px;
+    height: calc(100vh - 87px);
+    max-height: calc(100dvh - 87px);
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+}
+#home{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: 0;
+    right:0;
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    border:solid 1px transparent;
+}
+#home::-webkit-scrollbar {
+    display: none;
+}
+#home-inner{
+    width: 100%;
+    height:auto;
+    padding-bottom: 60px;
+    border: solid 1px transparent;
+}
+
+#logo-div{
+    height: 200px;
+    margin-top: 63px;
+}
+
+#image-logo{
+    height: 100%;
+    border-radius: 50%;
+    border: solid 2px #eef0e0;
+}
+
+#name-div{
+    margin-top: 20px;
+    color: #eef0e0;
+    font-size: 30px;
+}
+
+#button-div{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#wechat-panel{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: calc(100vw + 10px);
+    visibility: hidden;
+    transition: visibility 2s, left 2s;
+    z-index: 5;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    border: solid 1px transparent;
+}
+#wechat-panel::-webkit-scrollbar {
+    display: none;
+}
+#wechat-panel-inner{
+    width: 100%;
+    height:auto;
+    padding-bottom: 60px;
+    border: solid 1px transparent;
+}
+#wechat-panel-logo{
+    color: #eef0e0;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+}
+
+#wechat-panel-logo-icon-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;
+    margin-bottom: 18px;
+}
+
+#wechat-panel-logo-icon{
+    height: 100%;
+}
+
+#wechat-panel-logo-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    height: 27px;
+}
+#wechat-panel-logo-text-divider{
+    height: 100%;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+#wechat-method-content-telegram-icon {
+    top: 3px;
+}
+#wechat-method-content-down-icon {
+    top: 4px;
+}
+
+
+.box{
+    margin-left: calc(50% - 300px);
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    width: 100%;
+    height: 70px;
+    border-radius: 40px;
+    border: solid 1px #eef0e0;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 2s linear;
+}
+
+.button-content-div{
+    height: 100%;
+    width: 100%;
+    color: #eef0e0;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.7px;
+    display: flex;
+    padding-left: 23px;
+    padding-right: 23px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    height: 60%;
+}
+
+.wechat-method{
+    display: block;
+    border: solid 1px #eef0e0;
+    color: #eef0e0;
+    margin-top: 48px;
+}
+
+.wechat-method-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: solid 1px #eef0e0;
+    padding: 9px 2%;
+}
+.wechat-method-title-icon{
+    height: 30px;
+}
+.wechat-method-content{
+    align-items: center;
+    margin-top: 24px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 21px;
+    line-height: 36px;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+.wechat-method-content-icon{
+    position: relative;
+    height: 21px;
+}
+.wechat-method-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+    margin-bottom: 15px;
+    height: 36px;
+}
+.wechat-method-footer-icon{
+    height: 100%;
+}
+
+.deprecated{
+    text-decoration: line-through;
+}
+
+body.isHover .button:hover{
+    color: #212121;
+    border-color: #888;
+    outline: #eef0e0 solid 2px;
+}
+
+body.isHover .button:hover .icon{
+    filter:brightness(350%) contrast(350%);
+}
+
+.button:active{
+    color: #212121;
+    border-color: #888;
+    outline: #eef0e0 solid 2px;
+}
+
+.button:active .icon{
+    filter:brightness(350%) contrast(350%);
+}
+
+
+@media only screen and (max-width: 750px) {
+    #navigation-bar{
+        height: 11.6vw;
+    }
+    #nav-back-button{
+        margin-left: 2vw;
+    }
+    #canvas{
+        top: 11.6vw;
+        height: calc(100vh - 11.6vw);
+        max-height: calc(100dvh - 11.6vw);
+    }
+    #home-inner{
+        padding-bottom: 8vw;
+    }
+    #logo-div{
+        height: 26.666667vw;
+        margin-top: 8.4vw;
+    }
+    #name-div{
+        font-size: 4vw;
+        margin-top: 2.666667vw;
+    }
+    #button-div{
+        margin-top: 6.666667vw;
+    }
+    #wechat-panel-inner{
+        padding-bottom: 8vw;
+    }
+    #wechat-panel-logo{
+        margin-top: 4vw;
+    }
+    #wechat-panel-logo-icon-div{
+        height: 28vw;
+        margin-bottom: 2.4vw;
+    }
+    #wechat-panel-logo-text{
+        height: 3.6vw;
+        font-size: 2.8vw;
+    }
+    #wechat-panel-logo-text-divider{
+        margin-left: 1.6vw;
+        margin-right: 1.6vw;
+    }
+    #wechat-method-content-telegram-icon {
+        top: 0.4vw;
+    }
+    #wechat-method-content-down-icon {
+        top: 0.4vw;
+    }
+    #wechat-method-content-down-icon {
+        top: 0.53333333333vw;
+    }
+
+    .box{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .button{
+        height: 10vw;
+        margin-top: 1.6vw;
+    }
+    .button-content-div{
+        padding-left: 3vw;
+        padding-right: 3vw;
+        font-size: 3.3333333vw;
+    }
+    .wechat-method{
+        margin-top: 6.4vw;
+    }
+    .wechat-method-title{
+        font-size: 4vw;
+        padding: 1.2vw 2%;
+    }
+    .wechat-method-title-icon{
+        height: 4vw;
+    }
+    .wechat-method-content{
+        margin-top: 3.2vw;
+        font-size: 2.8vw;
+        line-height: 4.8vw;
+    }
+    .wechat-method-content-icon{
+        height: 2.8vw;
+    }
+    .wechat-method-footer{
+        margin-top: 4.8vw;
+        margin-bottom: 2vw;
+        height: 4.8vw;
+    }
+}

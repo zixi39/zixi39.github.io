@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xXZ1X1Xx</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <main>
+        <aside id="navigation-bar">
+            <div id="navbar-image-box" >
+                <img src="assets/images/navbar_logo.png" id="navbar-image-logo">
+            </div>
+            <a role="button" id="nav-back-button" onclick="toHome()">
+                <img src = "assets/icons/arrow-left.svg" class = "icon">
+            </a><br>
+        </aside>
+        <div id="canvas">
+            <div id="home">
+                <div id="home-inner">
+                    <div class = "box" id = "logo-div">
+                        <img src="assets/images/logo.png" id="image-logo">
+                    </div>
+                    <div class = "box" id = "name-div">
+                        <p><b>梓</b> • <b>熙</b></p>
+                    </div>
+                    <div class = "box" id = "button-div">
+                        <a class="button" href="https://twitter.com/zixi39" target="_blank" rel="noopener" role="button" id="twitter-button">
+                            <span class = "button-content-div">
+                                <img src = "assets/icons/twitter.svg" class = "icon">
+                                <p>Twitter</p>
+                                <img src = "assets/icons/cross.svg" class = "icon">
+                            </span>
+                        </a><br>
+                        <a class="button" href="https://t.me/+cGLS4fvT8do5Mjgx" target="_blank" rel="noopener" role="button" id="tg-channel-button">
+                            <span class = "button-content-div">
+                                <img src = "assets/icons/telegram.svg" class = "icon">
+                                <p>Telegram Channel</p>
+                                <img src = "assets/icons/cross.svg" class = "icon">
+                            </span>
+                        </a><br>
+                        <a class="button" href="https://t.me/+8lEvhE6EhkFiMDEx" target="_blank" rel="noopener" role="button" id="tg-group-button">
+                            <span class = "button-content-div">
+                                <img src = "assets/icons/telegram.svg" class = "icon">
+                                <p>Telegram Group</p>
+                                <img src = "assets/icons/cross.svg" class = "icon">
+                            </span>
+                        </a><br>
+                        <a class="button" role="button" id="wechat-button" onclick="wechatInfo()">
+                            <span class = "button-content-div">
+                                <img src = "assets/icons/wechat.svg" class = "icon">
+                                <p>WeChat</p>
+                                <img src = "assets/icons/cross.svg" class = "icon">
+                            </span>
+                        </a><br>
+                        <a class="button" href="https://www.threads.net/@zixi_39" target="_blank" rel="noopener" role="button" id="threads-button">
+                            <span class = "button-content-div">
+                                <img src = "assets/icons/threads.svg" class = "icon">
+                                <p>Threads</p>
+                                <img src = "assets/icons/cross.svg" class = "icon">
+                            </span>
+                        </a><br>
+                        <a class="button" href="https://github.com/zixi39" target="_blank" rel="noopener" role="button" id="github-button">
+                            <span class = "button-content-div">
+                                <img src = "assets/icons/github.svg" class = "icon">
+                                <p>GitHub</p>
+                                <img src = "assets/icons/cross.svg" class = "icon">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="wechat-panel">
+                <div id = "wechat-panel-inner">
+                    <div class="box" id="wechat-panel-logo">
+                        <div id = "wechat-panel-logo-icon-div">
+                            <img src = "assets/icons/flower.svg" id="wechat-panel-logo-icon">
+                        </div>
+                        <div id = "wechat-panel-logo-text">
+                            <b>梓</b>
+                            <img src = "assets/icons/pipe.svg" id="wechat-panel-logo-text-divider">
+                            <b>熙</b>
+                        </div>
+                    </div>
+                    <div class="box wechat-method">
+                        <div class = "wechat-method-title">
+                            <img src = "assets/icons/shield-cross-fill.svg" class="wechat-method-title-icon">
+                            <p><b>I</b></p>
+                            <img src = "assets/icons/shield-cross-fill.svg" class="wechat-method-title-icon">
+                        </div>
+                        <div class = "wechat-method-content">
+                            <p>参与以下互动</p>
+                            <p>1. 积极点赞，转推并评论推文</p>
+                            <p>2. 长期主动参与 <img src = "assets/icons/telegram.svg" class = "wechat-method-content-icon" id = "wechat-method-content-telegram-icon" > Telegram 群组中的讨论</p><br>
+                            <p>经过一段时间的考察后，满足条件的用户将会在推特私信信箱中收到微信好友邀请</p>
+                        </div>
+                        <div class = "wechat-method-footer">
+                            <img src = "assets/icons/cross.svg" class = "wechat-method-footer-icon">
+                        </div>
+                    </div>
+                    <div class="box wechat-method">
+                        <div class = "wechat-method-title">
+                            <img src = "assets/icons/shield-cross-fill.svg" class="wechat-method-title-icon">
+                            <p><b>II</b></p>
+                            <img src = "assets/icons/shield-cross-fill.svg" class="wechat-method-title-icon">
+                        </div>
+                        <div class = "wechat-method-content">
+                            <p style="font-family: Arial, Helvetica, sans-serif; text-align: center;"><b>Deprecated</b> <img src = "assets/icons/down.svg" class = "wechat-method-content-icon" id = "wechat-method-content-down-icon"></p><br>
+                            <p class="deprecated">在推特上参与不定期举行的微信抽签活动，具体活动规则以及参与方式请参见抽签活动推文</p><br>
+                            <p class="deprecated">抽签结果公布后，中签的用户将会在推特私信信箱中收到微信好友邀请</p>
+                        </div>
+                        <div class = "wechat-method-footer">
+                            <img src = "assets/icons/cross.svg" class = "wechat-method-footer-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
