@@ -2,7 +2,7 @@
 
 --------------------------------------------------------------------------------
 
-This repo contains all the source code for my personal website [zixi39.com](zixi39.com)<br>
+This repo contains all the source code for my personal website [zixi39.com](https://zixi39.com)<br>
 
 
 ## Supported Browsers
